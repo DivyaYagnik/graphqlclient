@@ -8,7 +8,7 @@ const app = express();
 
 app.use(cors());
 
-mongoose.connect("mongodb+srv://user:admin@graphql.2jpgh.mongodb.net/myFirstDatabase?retryWrites=true&w=majority");
+mongoose.connect("mongodb+srv://");
 mongoose.connection.once('open', () => {
     console.log("Connected to Database");
 });
